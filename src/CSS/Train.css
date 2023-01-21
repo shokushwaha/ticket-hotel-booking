@@ -1,0 +1,58 @@
+.wrapbox:before {
+    content: "";
+    background: url("../assets/train.jpg") no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+
+}
+
+body {
+    background-color: black;
+}
+
+.boxone {
+    margin: 10px auto;
+}
+
+.singleTrain {
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 60%;
+    height: 18rem;
+    margin-left: 20.5rem;
+    margin-top: 3rem;
+    color: purple;
+    background-color: rgb(109, 82, 220);
+    background-color: rgba(88, 86, 86, 0.61);
+    backdrop-filter: blur(5px);
+    font-size: large;
+    border-radius: 1rem;
+}
+
+.b {
+    height: 3rem;
+    width: 10rem;
+    margin-top: 0.5rem;
+    color: black;
+    font-weight: bolder;
+    background-color: rgb(148, 148, 247);
+    border: none;
+    border-radius: 1rem;
+}
+
+.b:hover {
+    height: 3rem;
+    width: 10rem;
+    margin-top: 0.5rem;
+    color: rgb(255, 253, 253);
+    font-weight: bolder;
+    background-color: rgb(13, 13, 220);
+    border: none;
+    border-radius: 1rem;
+}

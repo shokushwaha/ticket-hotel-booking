@@ -1,0 +1,15 @@
+.foot {
+
+
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: azure;
+    box-shadow: 0px 0px 10px black;
+    position: absolute;
+    top: 100%;
+    bottom: 0;
+}

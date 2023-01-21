@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Rochester&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+.outerBox :before {
+    content: "";
+    background: url('../assets/banner3.webp') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}
+
+
+.outerBox {
+    height: 85vh;
+}
+
+.lineone {
+    color: white;
+    /* border: 2px solid red; */
+    height: 10vh;
+    font-size: 4rem;
+    padding-left: 10%;
+    margin-top: 4vh;
+    font-weight: 600;
+    background: -webkit-linear-gradient(rgb(245, 10, 18), rgb(82, 2, 82));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.linetwo {
+    color: white;
+    height: 15vh;
+    font-size: 4rem;
+    display: block;
+    /* border: 2px solid red; */
+    font-weight: 600;
+    padding-left: 10%;
+}
+
+.base {
+    background: -webkit-linear-gradient(rgb(245, 10, 18), rgb(82, 2, 82));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.intro {
+    color: black;
+    margin-left: 10%;
+    width: 45vw;
+    /* border: 2px solid red; */
+    /* padding-top: 40px; */
+    font-size: 2rem;
+    font-family: 'Rochester', cursive;
+    color: aliceblue;
+    margin-top: 1rem;
+}
+
+.mainText {
+    font-size: 6rem;
+    font-weight: 900;
+    font-style: italic;
+    color: azure;
+}
