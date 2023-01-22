@@ -20,11 +20,11 @@ export default function AppProvider({ children }) {
             const options = {
                 method: 'GET',
                 headers: {
-                    'X-RapidAPI-Key': 'a7983889c2mshcdfb19ddcd3cadcp1ae2c3jsn95f9ed93e4dc',
+                    'X-RapidAPI-Key': 'd67440cfb5mshc8346d4fa415c23p1d1d02jsn1ff5b8b420ec',
                     'X-RapidAPI-Host': 'skyscanner50.p.rapidapi.com'
                 }
             };
-            fetch(`https://skyscanner50.p.rapidapi.com/api/v1/searchFlights?origin=${srcc2}&destination=${dstt2}&date=${dateT}&currency=USD&countryCode=US&market=en-US`, options)
+            fetch(`https://skyscanner50.p.rapidapi.com/api/v1/searchFlights?origin=${srcc2}&destination=${dstt2}&date=${dateT}`, options)
                 .then(response => response.json())
                 .then(response => {
                     console.log(response)
@@ -42,7 +42,7 @@ export default function AppProvider({ children }) {
             const options = {
                 method: 'GET',
                 headers: {
-                    'X-RapidAPI-Key': '9652b1ea7amsh9465057bff44315p1477b1jsn5011cd831018',
+                    'X-RapidAPI-Key': 'd67440cfb5mshc8346d4fa415c23p1d1d02jsn1ff5b8b420ec',
                     'X-RapidAPI-Host': 'irctc1.p.rapidapi.com'
                 }
             };
@@ -64,7 +64,7 @@ export default function AppProvider({ children }) {
             const options = {
                 method: 'GET',
                 headers: {
-                    'X-RapidAPI-Key': '9652b1ea7amsh9465057bff44315p1477b1jsn5011cd831018',
+                    'X-RapidAPI-Key': 'd67440cfb5mshc8346d4fa415c23p1d1d02jsn1ff5b8b420ec',
                     'X-RapidAPI-Host': 'skyscanner50.p.rapidapi.com'
                 }
             };

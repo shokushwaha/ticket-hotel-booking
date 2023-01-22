@@ -47,12 +47,28 @@ body {
 }
 
 .b:hover {
+    cursor: pointer;
     height: 3rem;
     width: 10rem;
+    transform: scale(1.1);
+    font-size: 1rem;
     margin-top: 0.5rem;
     color: rgb(255, 253, 253);
     font-weight: bolder;
     background-color: rgb(13, 13, 220);
     border: none;
     border-radius: 1rem;
+}
+
+input {
+    background-color: rgb(209, 204, 204);
+    height: 40px;
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    color: black;
+    font-weight: 400;
+    margin: 4px auto;
 }

@@ -1,13 +1,16 @@
 import React, { useContext } from 'react'
 import { Box, Button, Stack, Typography, TextField } from '@mui/material'
 import SearchIcon from "@mui/icons-material/Search";
-import TrainIcon from '@mui/icons-material/Train';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import { AppContext } from '../Context/AppProvider';
 export default function Flight() {
     const { flightData, srcc2, setSrcc2, dstt2, setDstt2, findFlights, dateT, setDateT } = useContext(AppContext);
 
     return (
         <div className="wrapper">
+            <ToastContainer floatingTime={5000} />
 
             <Box bgcolor={'purple'} ml={'17%'} mt={'15%'} width={'70%'} height={'100%'} border={'2px solid white'} borderRadius={'4px'}>
 
@@ -47,7 +50,7 @@ export default function Flight() {
                         ></TextField>
                         <input type="text" value={dateT} onChange={
                             e => setDateT(e.target.value)
-                        } />
+                        } placeholder="yyyy-mm-dd" />
 
                     </Stack>
                     <Stack>
@@ -69,7 +72,7 @@ export default function Flight() {
                             ${item.price.amount}
                         </div>
                         <div className="ccc">
-                            <button>Book Now</button>
+                            <button onClick={() => toast("Congrats! Your ticket has been booked!! 😁")}>Book Now</button>
                         </div>
 
                     </div>

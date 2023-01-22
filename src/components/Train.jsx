@@ -2,7 +2,8 @@ import { Box, Button, Stack, Typography, TextField } from '@mui/material'
 import React from 'react'
 import SearchIcon from "@mui/icons-material/Search";
 import TrainIcon from '@mui/icons-material/Train';
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Load1 from "../Loader/Load1"
 
 import { useState, useContext } from 'react';
@@ -16,6 +17,7 @@ export default function Train() {
     return (
         <>
             <div className="wrapbox">
+                <ToastContainer floatingTime={5000} />
 
                 <Box bgcolor={'purple'} ml={'17%'} mt={'15%'} width={'70%'} height={'100%'} border={'2px solid white'} borderRadius={'4px'}>
 
@@ -101,7 +103,7 @@ export default function Train() {
                                             Departure Time :{item.depart_time}<br />
                                         </div >
                                         <div className="z">
-                                            <button className='b'  >Book Now</button>
+                                            <button className='b' onClick={() => toast("Congrats! Your ticket has been booked!! 😁")}  >Book Now</button>
                                         </div>
                                     </div>
 

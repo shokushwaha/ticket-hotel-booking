@@ -104,6 +104,7 @@ body {
 }
 
 .btn:hover {
+    cursor: pointer;
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(27, 27, 27, .5);
 }
@@ -126,6 +127,7 @@ body {
 }
 
 .btn:hover::after {
+    cursor: pointer;
     background-color: rgb(0, 238, 255);
     transform: scaleX(1.4) scaleY(1.5);
     opacity: 0;
@@ -193,4 +195,11 @@ a {
     margin-top: 1rem;
     border-radius: 1rem;
     border: none;
+}
+
+.bbttnn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: blue;
+    color: azure;
 }
