@@ -5,6 +5,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 import { AppContext } from '../Context/AppProvider';
+import "../CSS/Flight.css"
 export default function Flight() {
     const { flightData, srcc2, setSrcc2, dstt2, setDstt2, findFlights, dateT, setDateT } = useContext(AppContext);
 
