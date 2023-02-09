@@ -27,7 +27,7 @@ export default function AppProvider({ children }) {
             fetch(`https://skyscanner50.p.rapidapi.com/api/v1/searchFlights?origin=${srcc2}&destination=${dstt2}&date=${dateT}`, options)
                 .then(response => response.json())
                 .then(response => {
-                    console.log(response)
+                   
                     setFlightData(response.data);
                 })
                 .catch(err => console.error(err));
@@ -49,7 +49,7 @@ export default function AppProvider({ children }) {
             fetch(`https://irctc1.p.rapidapi.com/api/v2/trainBetweenStations?fromStationCode=${srcc}&toStationCode=${dstt}`, options)
                 .then(response => response.json())
                 .then(response => {
-                    console.log(response.data)
+                  
                     setTrainData(response.data);
                 }
                 )
@@ -69,10 +69,10 @@ export default function AppProvider({ children }) {
                 }
             };
 
-            fetch('https://skyscanner50.p.rapidapi.com/api/v1/searchAirport?query=london', options)
+            fetch(`https://skyscanner50.p.rapidapi.com/api/v1/searchAirport?query=${lctn}`, options)
                 .then(response => response.json())
                 .then(response => {
-                    console.log(response)
+                   
                     setHotelList(response.data)
                 })
                 .catch(err => console.error(err));
